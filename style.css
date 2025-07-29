@@ -44,6 +44,27 @@
         display: block;
     }
 
+feature/jose_padilla789
+.image-figure {
+margin: 20px 0;
+text-align: center;
+}
+
+.image-figure img.responsive-img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-figure figcaption {
+font-size: 0.95rem;
+color: #555;
+margin-top: 8px;
+}
+
+.contenedor{
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -146,6 +167,7 @@ article ol li {
 }
 
 .contenedor {
+
     width: 400px;
     height: 400px;
     background: radial-gradient(circle, #00f, #0ff);
@@ -317,6 +339,60 @@ article ol li {
        Ajusté a un margen y ancho más estándar para que se posicione a la derecha. */
     margin-left: auto; /* Empuja a la derecha */
     margin-right: 1em;
+
+    width: auto;
+}
+/*Aside */
+.sidebar {
+flex: 1 1 25%;
+background-color: #f9f9f9;
+padding: 20px;
+margin-top: 20px;
+border-left: 2px solid #ddd;
+border-radius: 8px;
+}
+
+.sidebar h3,
+.sidebar h4 {
+margin-top: 0;
+}
+
+.related-links {
+list-style: none;
+padding-left: 0;
+}
+
+.related-links li {
+margin-bottom: 10px;
+}
+
+.related-links a {
+color: #0077cc;
+text-decoration: none;
+}
+
+.related-links a:hover {
+text-decoration: underline;
+}
+
+.widget {
+background-color: #ffffff;
+border: 1px solid #ccc;
+padding: 10px;
+margin-top: 15px;
+border-radius: 6px;
+}
+
+/* Este media query es para ocultar elementos en móviles */
+@media (max-width: 768px) {
+.sidebar {
+    display: none;
+}
+}/* Termina aquí*/
+
+/* Finish - Coder 7: Aside */
+.virtualClock{
+
     width: 250px; /* Ancho fijo para el sidebar */
     margin-top: 30px; /* Espacio para separarlo */
     float: right; /* Flota a la derecha para que el contenido principal fluya alrededor */
@@ -417,6 +493,7 @@ article ol li {
 }
 
 .footer-sections-wrapper {
+
     display: flex;
     flex-wrap: wrap; /* Permite que las secciones se envuelvan en pantallas pequeñas */
     justify-content: space-around; /* Distribuye el espacio entre las secciones */
@@ -606,6 +683,25 @@ article ol li {
     justify-content: center;
 }
 
+
+
+.service{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 480px) {
+    .sidebar{
+        display: none;
+    }
+}
+
+/* Start - Coder 8: Footer */
+
 .FormContact input {
     height: 40px;
     
@@ -711,3 +807,4 @@ body {
                 font-weight: bold;
             }
         }
+
