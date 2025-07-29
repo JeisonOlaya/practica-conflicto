@@ -3,6 +3,28 @@
     padding: 0;
 }
 
+.image-figure {
+margin: 20px 0;
+text-align: center;
+}
+
+.image-figure img.responsive-img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.image-figure figcaption {
+font-size: 0.95rem;
+color: #555;
+margin-top: 8px;
+}
+
+
+
+
+
 .contenedor{
     width: 400px;
     height: 400px;
@@ -98,33 +120,53 @@ header {
     margin-right: 1em;
     width: auto;
 }
-
-.cards > * {
-    background: cyan;
+/*Aside */
+.sidebar {
+flex: 1 1 25%;
+background-color: #f9f9f9;
+padding: 20px;
+margin-top: 20px;
+border-left: 2px solid #ddd;
+border-radius: 8px;
 }
 
-.sidebar > section{
-    display: flex;
-    flex-flow: column;
-    border: 3px solid black;
-    border-radius: 5px;
-    padding: 0.5rem;
+.sidebar h3,
+.sidebar h4 {
+margin-top: 0;
 }
 
-.sidebar section h3{
-    font-weight: 500;
-    font-size: 1.6625rem;
-    display: flex;
-    align-items: center;
+.related-links {
+list-style: none;
+padding-left: 0;
 }
 
-.sidebar section .card{
-    border-bottom: 2px solid blue;
-    padding: 1.5rem;
-    display: flex;
-    flex-flow: column;
-    gap: 1.5rem;
+.related-links li {
+margin-bottom: 10px;
 }
+
+.related-links a {
+color: #0077cc;
+text-decoration: none;
+}
+
+.related-links a:hover {
+text-decoration: underline;
+}
+
+.widget {
+background-color: #ffffff;
+border: 1px solid #ccc;
+padding: 10px;
+margin-top: 15px;
+border-radius: 6px;
+}
+
+/* Este media query es para ocultar elementos en móviles */
+@media (max-width: 768px) {
+.sidebar {
+    display: none;
+}
+}/* Termina aquí*/
 
 /* Finish - Coder 7: Aside */
 .virtualClock{
@@ -198,6 +240,7 @@ header {
     margin-top: 30px;
 }
 
+
 .service{
     background-color: white;
     padding: 20px;
@@ -212,3 +255,5 @@ header {
         display: none;
     }
 }
+
+/* Start - Coder 8: Footer */
